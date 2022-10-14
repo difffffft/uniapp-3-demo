@@ -10,19 +10,22 @@
 		reactive,
 		watch
 	} from 'vue';
-	import { wxCode, wxLoginLoading, useWxPhoneLogin, useWxPhoneLoginInit } from '@/hooks/useWxPhoneLogin'
-	useWxPhoneLoginInit()
-	const handleLogin = (e) => {
-		useWxPhoneLogin({
-			e,
-			success: (args) => {
-				console.log("登录成功", args);
-			},
-			fail: () => {
-				console.log("登录失败");
-			}
-		})
-	}
+	import '@/hooks/useLodash.js'
+	
+	// console.log(_);
+	// import { wxCode, wxLoginLoading, useWxPhoneLogin, useWxPhoneLoginInit } from '@/hooks/useWxPhoneLogin'
+	// useWxPhoneLoginInit()
+	// const handleLogin = (e) => {
+	// 	useWxPhoneLogin({
+	// 		e,
+	// 		success: (args) => {
+	// 			console.log("登录成功", args);
+	// 		},
+	// 		fail: () => {
+	// 			console.log("登录失败");
+	// 		}
+	// 	})
+	// }
 </script>
 
 <style lang="scss" scoped>

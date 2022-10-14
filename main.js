@@ -7,7 +7,6 @@ export function createApp() {
 	const app = createSSRApp(App)
 	app.use(uviewPlus)
 	app.use(Pinia.createPinia());
-	console.log(app);
 	return {
 		app,
 		Pinia
