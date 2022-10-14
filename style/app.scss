@@ -1,0 +1,66 @@
+page,
+block,
+view,
+swiper,
+scroll-view,
+movable-view,
+icon,
+text,
+progress,
+button,
+checkbox,
+form,
+input,
+label,
+picker,
+picker-view,
+radio,
+slider,
+switch,
+textarea,
+navigator,
+audio,
+image,
+video,
+map,
+canvas,
+contact-button,
+cover-image,
+cover-view {
+  box-sizing: border-box;
+}
+
+page {
+  height: 100%;
+  background-color: $app--page-bg-color;
+}
+
+// 横向排版
+.app--row{
+	display: flex;
+}
+
+// 纵向排版
+.app--col{
+	display: flex;
+	flex-direction: column;
+}
+
+// 居中
+.app--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 四周间隔
+.app--padding {
+  padding: $app--page-margin;
+}
+
+// 背景图片
+.app--bg-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
